@@ -1,7 +1,3 @@
 function solution(n) {
-    var answer = [];
-    for(let i = 1; i <= n; i+=2){
-        answer.push(i)
-    }
-    return answer;
+  return Array(n).fill().map((_, i) => i + 1).filter((num) => num % 2 !== 0);
 }
